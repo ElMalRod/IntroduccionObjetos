@@ -17,9 +17,10 @@ public class Principal {
 
     public Principal() {
         ContadorEje1();
+        System.out.println("--------------------------------");
+        CuadradoEje2();
     }
 
-    // Metodo Contador Usando las variables del Objeto y sus contructores
     public void ContadorEje1() {
         Contador contador = new Contador(1);
 
@@ -32,6 +33,21 @@ public class Principal {
         contador.ContadorMenos();
         contador.ContadorMenos();
         System.out.println("El numero del contador se decremento: " + contador.getContador());
+    }
+
+    public void CuadradoEje2() {
+        Cuadrado cuadrado = new Cuadrado(1, 1);
+
+        Cuadrado Aux = cuadrado;
+        System.out.println(" Base: " + cuadrado.getBase() + "  Altura: " + cuadrado.getAltura());
+        Aux.setBase(50);
+        Aux.setAltura(30);
+        System.out.println("Los valores nuevos son: ");
+        System.out.println(" Base: " + cuadrado.getBase() + "  Altura: " + cuadrado.getAltura());
+        Aux.area();
+        Aux.perimetro();
+        System.out.println("El area del cuadrado es: " + cuadrado.getArea());
+        System.out.println("El perimetro del cuadrado es: " + cuadrado.getPerimetro());
     }
 
 }
