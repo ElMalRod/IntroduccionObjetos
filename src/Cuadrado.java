@@ -54,7 +54,7 @@ public class Cuadrado {
     }
 
     public void perimetro() {
-        this.perimetro = (this.base * 2) + (this.altura * 2);
+        this.perimetro = this.base + this.altura + this.base + this.altura ;
     }
 
 }
