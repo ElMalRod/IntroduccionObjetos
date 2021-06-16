@@ -85,20 +85,20 @@ public class Principal {
     public void LibroEje6() {
         int opcion = 0, opcion1 = 0;
         Libro libro = new Libro("Principito", 1951, "Antoine de Saint-Exupéry", false);
-        Libro libroAuxiliar = libro;
+        Libro Aux = libro;
         libro.mostrarInformacion();
         System.out.println("\n");
         System.out.println("¿Deseas prestar el libro?");
         System.out.println("1) Si");
         System.out.println("2) No");
         opcion = sc.nextInt();
-        libroAuxiliar.prestamo(opcion);
+        Aux.prestamo(opcion);
         System.out.println("¿Deseas devolver el libro?");
         System.out.println("1) Si");
         System.out.println("2) No");
         opcion1 = sc.nextInt();
         if (opcion1 == 1) {
-            libroAuxiliar.devolver();
+            Aux.devolver();
             libro.mostrarInformacion();
         } else {
             libro.mostrarInformacion();
