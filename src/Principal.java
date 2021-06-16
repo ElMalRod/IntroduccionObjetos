@@ -1,5 +1,7 @@
 package src;
 
+import java.util.Scanner;
+
 /**
  *
  * @author emili
@@ -23,7 +25,10 @@ public class Principal {
         CirculoEje3();
         System.out.println("--------------------------------");
         RectanguloEje4();
+        System.out.println("--------------------------------");
+        LibroEje6();
     }
+    Scanner sc = new Scanner(System.in);
 
     public void ContadorEje1() {
         Contador contador = new Contador(1);
@@ -68,12 +73,36 @@ public class Principal {
     }
 
     public void RectanguloEje4() {
-        Rectangulo rectangulo = new Rectangulo(20, 30);
+        Rectangulo rectangulo = new Rectangulo(1, 1);
         Rectangulo Aux = rectangulo;
         Aux.area();
         Aux.perimetro();
         System.out.println("El area del rectangulo es: " + rectangulo.getArea());
         System.out.println("El perimetro del rectangulo es: " + rectangulo.getPerimetro());
+
+    }
+
+    public void LibroEje6() {
+        int opcion = 0, opcion1 = 0;
+        Libro libro = new Libro("Principito", 1951, "Antoine de Saint-Exupéry", false);
+        Libro libroAuxiliar = libro;
+        libro.mostrarInformacion();
+        System.out.println("\n");
+        System.out.println("¿Deseas prestar el libro?");
+        System.out.println("1) Si");
+        System.out.println("2) No");
+        opcion = sc.nextInt();
+        libroAuxiliar.prestamo(opcion);
+        System.out.println("¿Deseas devolver el libro?");
+        System.out.println("1) Si");
+        System.out.println("2) No");
+        opcion1 = sc.nextInt();
+        if (opcion1 == 1) {
+            libroAuxiliar.devolver();
+            libro.mostrarInformacion();
+        } else {
+            libro.mostrarInformacion();
+        }
 
     }
 
