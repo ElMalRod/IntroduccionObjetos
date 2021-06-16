@@ -24,6 +24,8 @@ public class Rectangulo {
         base = sc.nextInt();
         System.out.println("Ingrese Altura: ");
         altura = sc.nextInt();
+        this.base = base;
+        this.altura = altura;
         if (altura == base) {
             System.out.println("Los datos forman un cuadrado , debe ser un rectangulo");
         } 
