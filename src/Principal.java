@@ -109,10 +109,10 @@ public class Principal {
     }
 
     public void FraccionEje7() {
-        Fraccion f1 = new Fraccion(1,7); // Fracción 1/4
-        Fraccion f2 = new Fraccion(3,2); // Fracción 1/2
-        Fraccion f3 = new Fraccion(); // Fracción 0/1
-        Fraccion f4 = new Fraccion(4); // Fracción 4/1
+        Fraccion f1 = new Fraccion(1,7); 
+        Fraccion f2 = new Fraccion(3,2); 
+        Fraccion f3 = new Fraccion(); 
+        Fraccion f4 = new Fraccion(4); 
         // operaciones aritméticas con esas fracciones
         Fraccion suma = f1.sumar(f2);
         Fraccion resta = f1.restar(f3);
