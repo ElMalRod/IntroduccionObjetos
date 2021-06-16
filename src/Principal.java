@@ -27,6 +27,8 @@ public class Principal {
         RectanguloEje4();
         System.out.println("--------------------------------");
         LibroEje6();
+        System.out.println("--------------------------------");
+        FraccionEje7();
     }
     Scanner sc = new Scanner(System.in);
 
@@ -104,6 +106,27 @@ public class Principal {
             libro.mostrarInformacion();
         }
 
+    }
+
+    public void FraccionEje7() {
+        Fraccion f1 = new Fraccion(1,7); // Fracción 1/4
+        Fraccion f2 = new Fraccion(3,2); // Fracción 1/2
+        Fraccion f3 = new Fraccion(); // Fracción 0/1
+        Fraccion f4 = new Fraccion(4); // Fracción 4/1
+        // operaciones aritméticas con esas fracciones
+        Fraccion suma = f1.sumar(f2);
+        Fraccion resta = f1.restar(f3);
+        Fraccion producto = f1.multiplicar(f4);
+        Fraccion cociente = f1.dividir(f2);
+        //mostrar resultados
+        System.out.println("SUMA");
+        System.out.println(f1 + " + " + f2 + " = " + suma);
+        System.out.println("RESTA");
+        System.out.println(f1 + " - " + f3 + " = " + resta);
+        System.out.println("MULTIPLICAICON");
+        System.out.println(f1 + " * " + f4 + " = " + producto);
+        System.out.println("DIVISION ");
+        System.out.println(f1 + " / " + f2 + " = " + cociente);
     }
 
 }
