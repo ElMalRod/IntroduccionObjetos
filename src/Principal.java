@@ -19,6 +19,8 @@ public class Principal {
         ContadorEje1();
         System.out.println("--------------------------------");
         CuadradoEje2();
+        System.out.println("--------------------------------");
+        CirculoEje3();
     }
 
     public void ContadorEje1() {
@@ -48,6 +50,19 @@ public class Principal {
         Aux.perimetro();
         System.out.println("El area del cuadrado es: " + cuadrado.getArea());
         System.out.println("El perimetro del cuadrado es: " + cuadrado.getPerimetro());
+    }
+    
+     public void CirculoEje3(){
+        Circulo circulo = new Circulo(1);
+        Circulo Aux = circulo;
+        System.out.println("Radio: "+circulo.getRadio());
+        Aux.setRadio(30.7);
+        System.out.println("El valor nuevo es: ");
+        System.out.println("Radio: "+circulo.getRadio());
+        Aux.CalcularArea();
+        Aux.CalcularPerimetro();
+        System.out.println("El area del circulo es: "+circulo.getArea());
+        System.out.println("El perimetro del circulo es: "+circulo.getPerimetro());
     }
 
 }
